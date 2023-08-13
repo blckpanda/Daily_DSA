@@ -6,10 +6,12 @@ function mergeStrings(word1, word2) {
     while (i < word1.length || j < word2.length) {
         if (i < word1.length) {
             merged += word1[i];
+            console.log(i);
             i++;
         }
         if (j < word2.length) {
             merged += word2[j];
+            console.log(j);
             j++;
         }
     }
@@ -19,5 +21,6 @@ function mergeStrings(word1, word2) {
 
 const word1 = "abc";
 const word2 = "pqr";
-const mergedString = mergeStrings(word1, word2);
-console.log(mergedString); // Output: "apbqcr"
+const mergedSt = mergeStrings(word1, word2);
+console.log(mergedSt); // Output: "apbqcr"
+
