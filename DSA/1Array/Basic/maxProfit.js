@@ -6,7 +6,7 @@ function maxProfit(prices) {
         if (prices[i] < lowestPrice) {
             lowestPrice = prices[i];
         } else {
-            const profit = (prices[i]] - lowestPrice);
+            const profit = prices[i] - lowestPrice;
             if (profit > maxProfit) {
                 maxProfit = profit;
             }
